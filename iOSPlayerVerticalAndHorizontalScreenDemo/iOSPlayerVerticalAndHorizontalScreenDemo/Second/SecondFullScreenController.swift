@@ -27,10 +27,10 @@ class SecondFullScreenController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         view.backgroundColor = .white
-        NotificationCenter.default.addObserver(self, selector: #selector(SecondFullScreenController.deviceOrientationDidChange), name: NSNotification.Name.UIDeviceOrientationDidChange, object: nil)
+        NotificationCenter.default.addObserver(self, selector: #selector(SecondFullScreenController.deviceOrientationDidChange), name: UIDevice.orientationDidChangeNotification, object: nil)
     }
     
-    func deviceOrientationDidChange() {
+    @objc func deviceOrientationDidChange() {
         if playView?.state != .fullScreen {
             return
         }

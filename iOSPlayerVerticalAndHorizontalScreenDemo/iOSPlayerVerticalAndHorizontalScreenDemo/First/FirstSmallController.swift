@@ -73,10 +73,10 @@ class FirstSmallController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        NotificationCenter.default.addObserver(self, selector: #selector(FirstSmallController.deviceOrientationDidChange), name: NSNotification.Name.UIDeviceOrientationDidChange, object: nil)
+        NotificationCenter.default.addObserver(self, selector: #selector(FirstSmallController.deviceOrientationDidChange), name: UIDevice.orientationDidChangeNotification, object: nil)
     }
     
-    func deviceOrientationDidChange() {
+    @objc func deviceOrientationDidChange() {
         if playView.state == .small {
             switch UIDevice.current.orientation {
             case .portrait:
@@ -102,7 +102,7 @@ class FirstSmallController: UIViewController {
         }
     }
     
-    func backBtnClick(with sender: UIButton) {
+    @objc func backBtnClick(with sender: UIButton) {
         navigationController?.popViewController(animated: true)
     }
     
@@ -144,7 +144,7 @@ class FirstSmallController: UIViewController {
     }
     
     
-    func handleTapGesture(sender: UITapGestureRecognizer) {
+    @objc func handleTapGesture(sender: UITapGestureRecognizer) {
         switch playView.state {
         case .small:
             enterFullscreen()

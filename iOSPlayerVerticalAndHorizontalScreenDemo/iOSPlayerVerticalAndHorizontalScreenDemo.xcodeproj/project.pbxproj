@@ -151,7 +151,7 @@
 				TargetAttributes = {
 					B3ABE5601F427E5400A32CBE = {
 						CreatedOnToolsVersion = 8.3.3;
-						DevelopmentTeam = 5Y372T28DH;
+						DevelopmentTeam = FT3GS8LM5X;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -161,6 +161,7 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 				Base,
 			);
@@ -321,13 +322,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = 5Y372T28DH;
+				DEVELOPMENT_TEAM = FT3GS8LM5X;
 				INFOPLIST_FILE = iOSPlayerVerticalAndHorizontalScreenDemo/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.zxs.iOSPlayerVerticalAndHorizontalScreenDemo.iOSPlayerVerticalAndHorizontalScreenDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 3.0;
+				SWIFT_VERSION = 4.2;
 			};
 			name = Debug;
 		};
@@ -335,13 +336,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = 5Y372T28DH;
+				DEVELOPMENT_TEAM = FT3GS8LM5X;
 				INFOPLIST_FILE = iOSPlayerVerticalAndHorizontalScreenDemo/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.zxs.iOSPlayerVerticalAndHorizontalScreenDemo.iOSPlayerVerticalAndHorizontalScreenDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 3.0;
+				SWIFT_VERSION = 4.2;
 			};
 			name = Release;
 		};

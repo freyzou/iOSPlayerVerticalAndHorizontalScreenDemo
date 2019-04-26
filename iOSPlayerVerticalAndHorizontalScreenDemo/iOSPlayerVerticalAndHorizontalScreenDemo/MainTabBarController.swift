@@ -18,13 +18,13 @@ class MainTabBarController: UITabBarController {
         firstVC.tabBarItem.image = #imageLiteral(resourceName: "activity")
         let firstNVC = MainNavigationController(rootViewController: firstVC)
         
-        let thiredVC = ViewController()
-        thiredVC.title = "自定义转场动画"
-        thiredVC.tabBarItem.image = #imageLiteral(resourceName: "barrage")
-        let thiredNVC = MainNavigationController(rootViewController: thiredVC)
+        let thirdVC = ViewController()
+        thirdVC.title = "自定义转场动画"
+        thirdVC.tabBarItem.image = #imageLiteral(resourceName: "barrage")
+        let thirdNVC = MainNavigationController(rootViewController: thirdVC)
         
-        self.addChildViewController(firstNVC)
-        self.addChildViewController(thiredNVC)
+        self.addChild(firstNVC)
+        self.addChild(thirdNVC)
         
     }
     

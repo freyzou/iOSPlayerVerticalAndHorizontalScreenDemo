@@ -45,7 +45,7 @@ class ViewController: UIViewController {
         navigationController?.setNavigationBarHidden(false, animated: true)
     }
     
-    func nextBtnClick(with sender: UIButton) {
+    @objc func nextBtnClick(with sender: UIButton) {
         if let selectedIndex = tabBarController?.selectedIndex {
             switch selectedIndex {
             case 0:
